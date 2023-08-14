@@ -37,7 +37,7 @@ p, ul {
 }
 
 .row {
-    padding-bottom: 25px;
+    padding-bottom: 15px;
 }
 
 .container {
@@ -136,10 +136,11 @@ div.footer-content, .h3 {
 
 
 .picture-text {
+    font-size: x-small;
     position: absolute;
     top: 10px;
     left: 10px;
-    width: 340px;
+    width: 120px;
     background-color: #ffffff; /* Background color for text */
     color: #797979; /* Text color */
     padding: 5px 2px 0;
