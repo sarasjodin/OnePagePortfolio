@@ -79,6 +79,12 @@ a {
     transition: color 0.3s ease;
 }
 
+.white-bkg {
+    color: #31a5ba;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
 a:hover {
     text-decoration: none;
     transition: color 0.3s ease;
