@@ -187,7 +187,7 @@ a {
     transition: color 0.3s ease;
 }
 
-a:hover, #playground1 a:hover {
+a:hover, #playground2 a:hover {
     text-decoration: none;
     transition: color 0.3s ease;
     color: #ff9d00 
@@ -264,19 +264,11 @@ div.footer-content, .h3 {
     color:#ffffff;
 }
 
-/* Charts css */
-        div p {
-            display: flex;
-            margin: auto 0;
-            justify-content: center;
-            align-items: center;
-        }
+figcaption {
+  color: rgb(146, 146, 146);
+}
 
-        p {
-            font-size: large;
-            color: rgb(139, 139, 139);
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-        }
+/* Charts css */
 
         h1 {
 
