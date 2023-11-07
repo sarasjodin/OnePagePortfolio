@@ -169,8 +169,8 @@ div.footer-content,
   position: absolute;
   top: 10px;
   right: 10px;
-  width: 120px;
-  background-color: #ffffff; /* Background color for text */
+  width: 110px;
+  background-color: rgba(255, 255, 255, 0.6);/* Background color for text */
   color: #797979; /* Text color */
   padding-bottom: 0;
   text-align: center;
@@ -178,7 +178,7 @@ div.footer-content,
 }
 
 .picture-text p {
-  margin: 5px;
-  padding: 5px;
+  margin: 3px;
+  padding: 3px;
   line-height: 1.5;
 }
