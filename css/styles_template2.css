@@ -1,3 +1,8 @@
+/* body *:not(nav):not(footer)::after,
+body *:not(nav):not(footer)::before {
+  box-sizing: unset !important;
+} */
+
 body {
   background-color: rgb(255, 255, 255);
 }
@@ -190,83 +195,79 @@ div.footer-content,
   border-radius: 3px;
 }
 
-#Charts
-        main div {
-            text-align: center;
-        }
+.message {
+  position: absolute;
+  width: 50px;
+  height: 8px;
+  text-align: center;
+  top: 62px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgb(255, 255, 255);
+  color: #4e4e4e;
+  padding: 8px;
+  border-radius: 5px;
+  font-size: xx-small;
+  visibility: hidden;
+}
 
-        .message {
-            position: absolute;
-            width: 50px;
-            height: 8px;
-            text-align: center;
-            top: 62px;
-            left: 50%;
-            transform: translateX(-50%);
-            background-color: rgb(255, 255, 255);
-            color: #4e4e4e;
-            padding: 8px;
-            border-radius: 5px;
-            font-size: xx-small;
-            visibility: hidden;
-        }
+.icon:hover .message {
+  visibility: visible;
+}
 
-        .icon:hover .message {
-            visibility: visible;
-        }
+svg {
+  background-color: white;
+}
 
-        svg {
-            background-color: white;
-        }
+.chart-wrapper {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  padding: 30px;
+}
 
-        .chart-wrapper {
-            width: 200px;
-            height: 200px;
-            position: relative;
-            overflow: hidden;
-            padding: 30px;
-        }
+.chart-wrapper .circle-fill {
+  animation: fillAnimation 1s cubic-bezier(0.5, 0, 0.5, 1);
+  transform-origin: center center;
+}
 
-        .chart-wrapper .circle-fill {
-            animation: fillAnimation 1s cubic-bezier(0.5, 0, 0.5, 1);
-            transform-origin: center center;
-        }
+.chart-wrapper:hover .circle-fill {
+  animation: colorAnimation 1s cubic-bezier(0.5, 0, 0.5, 1) forwards;
+}
 
-        .chart-wrapper:hover .circle-fill {
-            animation: colorAnimation 1s cubic-bezier(0.5, 0, 0.5, 1) forwards;
-        }
+.chart-wrapper,
+.chart-wrapper::after,
+.chart-wrapper::before {
+  box-sizing: unset !important;
+}
 
-        .chart-text {
-            fill: rgb(74, 74, 74);
-            font-weight: bold;
-            font-size: 24px;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            text-anchor: middle;
-            }
+.chart-text {
+  fill: rgb(74, 74, 74);
+  font-weight: bold;
+  font-size: 24px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-anchor: middle;
+}
 
-        @keyframes fillAnimation {
-            0% {
-                transform: rotate(0deg);
-                fill: rgb(255, 255, 255);
-            }
+@keyframes fillAnimation {
+  0% {
+    transform: rotate(0deg);
+    fill: rgb(255, 255, 255);
+  }
 
-            100% {
-                transform: rotate(360deg);
-                fill: rgb(255, 255, 255);
-            }
-        }
+  100% {
+    transform: rotate(360deg);
+    fill: rgb(255, 255, 255);
+  }
+}
 
-        @keyframes colorAnimation {
-            0% {
-                fill: rgb(255, 255, 255);
-            }
+@keyframes colorAnimation {
+  0% {
+    fill: rgb(255, 255, 255);
+  }
 
-            100% {
-                fill: rgb(255, 255, 255);
-            }
-        }
-
-        *, ::after, ::before {
-      box-sizing: unset !important;
-    }
- 
+  100% {
+    fill: rgb(255, 255, 255);
+  }
+}
