@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #ball1 {
+            width: 50px;
+            height: 50px;
+            background: red;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+        }
+
+        #ball2 {
+            width: 150px;
+            height: 150px;
+            background: blue;
+            border-radius: 50%;
+            position: absolute;
+            top: 75%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Testing GASP and Anime.js for JavaScript animations</h1>
+    <div id="ball1"></div>
+    <div id="ball2"></div>
+    <!-- GSAP library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+
+    <!-- GSAP animation -->
+    <script>
+        gsap.to("#ball1", {
+            duration: 2,
+            x: "95vw",
+            repeat: -1,
+            yoyo: true,
+            ease: "power1.inOut"
+        });
+
+        // Create SVG elements for the lines and arrows
+        var svgNS = "http://www.w3.org/2000/svg";
+        var svg = document.createElementNS(svgNS, "svg");
+        svg.setAttribute("width", "800");
+        svg.setAttribute("height", "200");
+        document.body.appendChild(svg);
+
+        // Create the top line and arrow
+        var topLine = document.createElementNS(svgNS, "line");
+        topLine.setAttribute("x1", "0");
+        topLine.setAttribute("y1", "50");
+        topLine.setAttribute("x2", "800");
+        topLine.setAttribute("y2", "50");
+        topLine.setAttribute("stroke", "#000");
+        topLine.setAttribute("stroke-dasharray", "10,10");
+        svg.appendChild(topLine);
+
+        /* var topArrow = document.createElementNS(svgNS, "polygon");
+        topArrow.setAttribute("points", "800,45 810,50 800,55");
+        topArrow.setAttribute("fill", "#000");
+        svg.appendChild(topArrow); */
+
+
+
+        // Create the bottom line and arrow
+        var bottomLine = document.createElementNS(svgNS, "line");
+        bottomLine.setAttribute("x1", "800");
+        bottomLine.setAttribute("y1", "150");
+        bottomLine.setAttribute("x2", "0");
+        bottomLine.setAttribute("y2", "150");
+        bottomLine.setAttribute("stroke", "#000");
+        bottomLine.setAttribute("stroke-dasharray", "10,10");
+        svg.appendChild(bottomLine);
+
+        /* var bottomArrow = document.createElementNS(svgNS, "polygon");
+        bottomArrow.setAttribute("points", "0,145 10,150 0,155");
+        bottomArrow.setAttribute("fill", "#000");
+        svg.appendChild(bottomArrow); */
+
+        // Animate the lines
+        gsap.to([topLine/* , topArrow */], { duration: 2, attr: { x1: "-=100", x2: "-=100" }, repeat: -1 });
+        gsap.to([bottomLine/* , bottomArrow */], { duration: 2, attr: { x1: "+=100", x2: "+=100" }, repeat: -1 });
+
+    </script>
+
+    <!-- Anime.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+    <!-- Anime.js animation -->
+    <script>
+        anime({
+            targets: '#ball2',
+            backgroundColor: ['#000', '#F00', '#000', '#0F0', '#000', '#00F', '#000', '#AAA'],
+            duration: 2000,
+            loop: true,
+            easing: 'linear',
+            direction: 'alternate'
+        });
+    </script>
+
+    <!-- Anime.js library -->
+</body>
+
+</html>
