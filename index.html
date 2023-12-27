@@ -1,418 +1,651 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="This programming portfolio was created to find new, interesting opportunities and to visualize my development from a curious coder to a full-stack developer." />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This programming portfolio was created to find new, interesting opportunities and to visualize my development from a curious coder to a full-stack developer."
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     <title>Sara's Programming Portfolio | sarasjodin.com</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#welcome">Sara Sjodin Scolari</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
-                aria-labelledby="offcanvasDarkNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Sara Sjodin Scolari</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#welcome" title="Visit Home">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about" title="Visit the About section" id="about-link">About
-                                Me</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                My Portfolio
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-dark">
-                                <li><a class="dropdown-item" href="#portfolio" title="Visit the Portfolio section"
-                                        id="portfolio-link">My Portfolio section</a>
-                                </li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" target="_blank" href="https://climasense.netlify.app"
-                                        title="Visit my Weather app" id="weatherapp-link">OpenWeather API app</a></li>
-                                <li><a class="dropdown-item" target="_blank" href="https://timezonesclocks.netlify.app"
-                                        title="Visit my World Clocks' app" id="worldclocks-link">Worlds' Clocks app</a>
-                                </li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="mycodingplayground1.html"
-                                        title="Visit one of my Playground experimental pages"
-                                        id="playground1-link">Experiment animated
-                                        SVGs</a></li>
-                                <li><a class="dropdown-item" href="mycodingplayground2.html"
-                                        title="Visit one of my Playground experimental pages"
-                                        id="playground2-link">Experiment animated
-                                        charts</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact" title="Visit the Contact section"
-                                id="contact-link">Contact
-                                Me</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#future-projects" title="Visit the Future projects section"
-                                id="projects-link">My Future projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#learning-path" title="Visit the Learning path section"
-                                id="learning-link">My
-                                Learning path</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#welcome">Sara Sjodin Scolari</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end text-bg-dark"
+          tabindex="-1"
+          id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+              Sara Sjodin Scolari
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" href="#welcome" title="Visit Home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#about"
+                  title="Visit the About section"
+                  id="about-link"
+                  >About Me</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  My Portfolio
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="#portfolio"
+                      title="Visit the Portfolio section"
+                      id="portfolio-link"
+                      >My Portfolio section</a
+                    >
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      target="_blank"
+                      href="https://climasense.netlify.app"
+                      title="Visit my Weather app"
+                      id="weatherapp-link"
+                      >OpenWeather API app</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      target="_blank"
+                      href="https://timezonesclocks.netlify.app"
+                      title="Visit my World Clocks' app"
+                      id="worldclocks-link"
+                      >Worlds' Clocks app</a
+                    >
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="mycodingplayground1.html"
+                      title="Visit one of my Playground experimental pages"
+                      id="playground1-link"
+                      >Experiment animated SVGs</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="mycodingplayground2.html"
+                      title="Visit one of my Playground experimental pages"
+                      id="playground2-link"
+                      >Experiment animated charts</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#contact"
+                  title="Visit the Contact section"
+                  id="contact-link"
+                  >Contact Me</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#future-projects"
+                  title="Visit the Future projects section"
+                  id="projects-link"
+                  >My Future projects</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#learning-path"
+                  title="Visit the Learning path section"
+                  id="learning-link"
+                  >My Learning path</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
     </nav>
 
     <section id="welcome" class="gradient-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-5">
-                    <h1>Welcome to my Portfolio</h1>
-                    <p>With this page I want to:</p>
-                    <ul>
-                        <li>show you my programming skills</li>
-                        <li>visualize how I will develop from being a curious coder to become a full-stack developer
-                        </li>
-                        <li>find new interesting opportunities - <a href="#contact"
-                                title="Visit the Contact section"><b>Contact
-                                    me!</b></a></li>
-                    </ul>
-                    <br>
-                    <p>I also have a website showcasing my current offering as a digital consultant: <a
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <h1>Welcome to my Portfolio</h1>
+            <p>With this page I want to:</p>
+            <ul>
+              <li>show you my programming skills</li>
+              <li>
+                visualize how I will develop from being a curious coder to
+                become a full-stack developer
+              </li>
+              <li>
+                find new interesting opportunities -
+                <a href="#contact" title="Visit the Contact section"
+                  ><b>Contact me!</b></a
+                >
+              </li>
+            </ul>
+            <br />
+            <!-- <p>I also have a website showcasing my current offering as a digital consultant: <a
                         href="https://sarasjodin.com" title="Visit sarasjodin.com's homepage"
-                        target="_blank"><b>sarasjodin.com</b></a></p>
-                </div>
-                <div class="col-md-7 align-self-center">
-                    <div class="picture-text-container">
-                        <div class="picture-text">
-                            <p>Welcome to my Portfolio Page</p>
-                        </div>
-                    </div>
-                    <img src="images/sara.jpg" alt="Sara" class="img-fluid" title="Sara working in her office">
-                </div>
+                        target="_blank"><b>sarasjodin.com</b></a></p> -->
+          </div>
+          <div class="col-md-7 align-self-center">
+            <div class="picture-text-container">
+              <div class="picture-text">
+                <p>Welcome to my Portfolio Page</p>
+              </div>
             </div>
+            <img
+              src="images/sara.jpg"
+              alt="Sara"
+              class="img-fluid"
+              title="Sara working in her office"
+            />
+          </div>
         </div>
+      </div>
     </section>
 
     <section id="about">
-        <div class="container non-gradient-section">
-            <div class="row">
-                <div class="col-md-6">
-                    <h2>About Me</h2>
-                    <p>Who am I?</p>
-                    <ul>
-                        <li>I was born in Sweden 🇸🇪</li>
-                        <li>My current aim is to become a skilled full-stack developer</li>
-                        <li>I'm based in Milan 🇮🇹</li>
-                    </ul>
-                    <p>I love...</p>
-                    <ul>
-                        <li>to ski and run in the mountains with my family</li>
-                        <li>endurance races, like ultra running or "Vasaloppet"</li>
-                        <li>to solve problems for family, friends & colleagues</li>
-                    </ul>
-                    <p><em>How can I help you?</em></p>
-                </div>
-                <div class="col-md-6  align-self-center">
-                    <div class="picture-text-container">
-                        <div class="picture-text">
-                            <p>I'm also interessted in AI, data visualisation and sports.</p>
-                        </div>
-                    </div>
-                    <img src="images/sara_studying.jpg" alt="Sara" class="img-fluid" title="Sara working in her office">
-                </div>
+      <div class="container non-gradient-section">
+        <div class="row">
+          <div class="col-md-6">
+            <h2>About Me</h2>
+            <p>Who am I?</p>
+            <ul>
+              <li>I was born in Sweden 🇸🇪</li>
+              <li>
+                My current aim is to become a skilled full-stack developer
+              </li>
+              <li>I'm based in Milan 🇮🇹</li>
+            </ul>
+            <p>I love...</p>
+            <ul>
+              <li>to ski and run in the mountains with my family</li>
+              <li>endurance races, like ultra running or "Vasaloppet"</li>
+              <li>to solve problems for family, friends & colleagues</li>
+            </ul>
+            <p><em>How can I help you?</em></p>
+          </div>
+          <div class="col-md-6 align-self-center">
+            <div class="picture-text-container">
+              <div class="picture-text">
+                <p>
+                  I'm also interessted in AI, data visualisation and sports.
+                </p>
+              </div>
             </div>
+            <img
+              src="images/sara_studying.jpg"
+              alt="Sara"
+              class="img-fluid"
+              title="Sara working in her office"
+            />
+          </div>
         </div>
+      </div>
     </section>
 
     <section id="portfolio" class="gradient-section">
-        <div class="container">
-            <h2>My Portfolio</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <h3><a href="https://timezonesclocks.netlify.app/" title="Visit my Time Zone Clocks' App"
-                            target="_blank">Time Zone Clocks' app</a></h3>
-                    <ul>
-                        <li>Pre-defined Cities and Times</li>
-                        <li>Real-Time Clock Updates with JavaScript functions</li>
-                        <li>Geolocation Handling of "My Location"</li>
-                        <li>Dropdown City Selection</li>
-                        <li>Flags</li>
-                    </ul>
-                    <p>The World Clock app utilizes JavaScript for handling time zone calculations, real-time clock
-                        updates, geolocation, and user interactions.</p>
-                </div>
-                <div class="col-md-6">
-                    <a href="https://timezonesclocks.netlify.app/" title="Visit my Time Zone Clocks' App"
-                        target="_blank">
-                        <img src="images/timezoneclocks.png" alt="Screenshot of TimeZone Clocks' App"
-                            title="My Time zone app" class="img-fluid">
-                    </a>
-
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <h3><a href="https://climasense.netlify.app" title="Visit my Weather App" target="_blank">Weather
-                            app</a></h3>
-                    <ul>
-                        <li>Integration of APIs</li>
-                        <li>User Interaction and UI Design</li>
-                        <li>Geolocation Handling</li>
-                        <li>Dynamic Theming</li>
-                        <li>Responsive Design</li>
-                        <li>Error Handling and User Feedback</li>
-                        <li>Thematic Variation</li>
-                    </ul>
-                    <p>Overall, this project has been an enriching experience that has expanded my skillset and provided
-                        practical insights into real-world web development scenarios.</p>
-                </div>
-                <div class="col-md-6">
-                    <a href="https://climasense.netlify.app" title="Visit my Weather App" target="_blank"><img
-                            src="images/weatherapp.png" alt="Screenshot of Weather App" title="My Weather app"
-                            class="img-fluid"></a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <h3>My coding playground - mixed material</h3>
-                </div>
-                <div class="col-md-6">
-                    <p><a href="mycodingplayground1.html" title="Visit my svg animation test"><strong>Svg
-                                animations</strong> | Animated weather icons</a></p>
-                    <p><a href="mycodingplayground2.html" title="Visit my chart animation test"><strong>Svg
-                                animations</strong> | Animated charts</a></p>
-                </div>
-            </div>
+      <div class="container">
+        <h2>My Portfolio</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <h3>
+              <a
+                href="https://timezonesclocks.netlify.app/"
+                title="Visit my Time Zone Clocks' App"
+                target="_blank"
+                >Time Zone Clocks' app</a
+              >
+            </h3>
+            <ul>
+              <li>Pre-defined Cities and Times</li>
+              <li>Real-Time Clock Updates with JavaScript functions</li>
+              <li>Geolocation Handling of "My Location"</li>
+              <li>Dropdown City Selection</li>
+              <li>Flags</li>
+            </ul>
+            <p>
+              The World Clock app utilizes JavaScript for handling time zone
+              calculations, real-time clock updates, geolocation, and user
+              interactions.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <a
+              href="https://timezonesclocks.netlify.app/"
+              title="Visit my Time Zone Clocks' App"
+              target="_blank"
+            >
+              <img
+                src="images/timezoneclocks.png"
+                alt="Screenshot of TimeZone Clocks' App"
+                title="My Time zone app"
+                class="img-fluid"
+              />
+            </a>
+          </div>
         </div>
+        <div class="row">
+          <div class="col-md-6">
+            <h3>
+              <a
+                href="https://climasense.netlify.app"
+                title="Visit my Weather App"
+                target="_blank"
+                >Weather app</a
+              >
+            </h3>
+            <ul>
+              <li>Integration of APIs</li>
+              <li>User Interaction and UI Design</li>
+              <li>Geolocation Handling</li>
+              <li>Dynamic Theming</li>
+              <li>Responsive Design</li>
+              <li>Error Handling and User Feedback</li>
+              <li>Thematic Variation</li>
+            </ul>
+            <p>
+              Overall, this project has been an enriching experience that has
+              expanded my skillset and provided practical insights into
+              real-world web development scenarios.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <a
+              href="https://climasense.netlify.app"
+              title="Visit my Weather App"
+              target="_blank"
+              ><img
+                src="images/weatherapp.png"
+                alt="Screenshot of Weather App"
+                title="My Weather app"
+                class="img-fluid"
+            /></a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <h3>
+              <a
+                href="https://ai-poems-generator.netlify.app/"
+                title="Visit my AI Poem generator App"
+                target="_blank"
+                >AI Poem generator app</a
+              >
+            </h3>
+            <ul>
+              <li>Dynamic Title Animation</li>
+              <li>Custom AI Poem Bot Icon</li>
+              <li>Flexible Poem Content Selection</li>
+              <li>User-Customizable Input</li>
+              <li>Dynamic API Request Building</li>
+              <li>Guided Poem Composition Instructions</li>
+            </ul>
+            <p>
+              This AI API app made me deepen my JavaScript knowledge for
+              enhanced interactivity, dynamic API requests and a user-friendly
+              experience.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <a
+              href="https://ai-poems-generator.netlify.app/"
+              title="Visit my Weather App"
+              target="_blank"
+              ><img
+                src="images/aipoemgenerator.png"
+                alt="Screenshot of AI Poem generator app"
+                title="My AI Poem generator app"
+                class="img-fluid"
+            /></a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <h3>My coding playground - mixed material</h3>
+          </div>
+          <div class="col-md-6">
+            <p>
+              <a
+                href="mycodingplayground1.html"
+                title="Visit my svg animation test"
+                ><strong>Svg animations</strong> | Animated weather icons</a
+              >
+            </p>
+            <p>
+              <a
+                href="mycodingplayground2.html"
+                title="Visit my chart animation test"
+                ><strong>Svg animations</strong> | Animated charts</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="contact">
-        <div class="container non-gradient-section">
-            <div class="row">
-                <div class="col-md-6">
-                    <h2>Contact me - Now!</h2>
-                    <p><b>Email:</b> <a class="white-bkg" href="mailto:sara@sarasjodin.com"
-                            target="_blank">sara@sarasjodin.com</a></p>
-                    <p><b>Phone:</b> <a class="white-bkg" href="tel:00393454171570">+39 345 4171 570</a></p>
-                    <p><b>Based in:</b> Milan, Italy</p>
-                </div>
-                <div class="col-md-6">
-                    <div class="picture-text-container">
-                        <div class="picture-text">
-                            <p>Contact me!</p>
-                        </div>
-                    </div>
-                    <img src="images/sara_working.jpg" alt="Sara" class="img-fluid" title="Sara">
-                </div>
+      <div class="container non-gradient-section">
+        <div class="row">
+          <div class="col-md-6">
+            <h2>Contact me - Now!</h2>
+            <p>
+              <b>Email:</b>
+              <a
+                class="white-bkg"
+                href="mailto:sara@sarasjodin.com"
+                target="_blank"
+                >sara@sarasjodin.com</a
+              >
+            </p>
+            <p>
+              <b>Phone:</b>
+              <a class="white-bkg" href="tel:00393454171570"
+                >+39 345 4171 570</a
+              >
+            </p>
+            <p><b>Based in:</b> Milan, Italy</p>
+          </div>
+          <div class="col-md-6">
+            <div class="picture-text-container">
+              <div class="picture-text">
+                <p>Contact me!</p>
+              </div>
             </div>
+            <img
+              src="images/sara_working.jpg"
+              alt="Sara"
+              class="img-fluid"
+              title="Sara"
+            />
+          </div>
         </div>
+      </div>
     </section>
 
     <section id="future-projects" class="gradient-section">
-        <div class="container">
-            <h2>Some future programming projects I'm interested in</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <ul>
-                        <li><strong>A React Weather Dashboard:</strong> Build a weather dashboard that fetches weather
-                            data for different cities using a weather API and displays the information in an interactive
-                            interface.</li>
-                        <li><strong>Memory Game:</strong> Build a memory card game where users need to match pairs of
-                            cards. Track the number of moves and time taken to complete the game.</li>
-                        <li><strong>To-Do List App:</strong> Create a web-based to-do list application where users can
-                            add, edit, and mark tasks as completed. Implement user authentication to allow users to have
-                            their own personalized to-do lists. Implement AI functionality.</li>
-                        <li><strong>RESTful API:</strong> Develop a RESTful API that provides data and functionality for
-                            a specific domain, such as user profiles, product listings, or events. Document the API
-                            endpoints for others to use.</li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <ul>
-                        <li><strong>Chat Application:</strong> Create a real-time chat application using technologies
-                            like Node.js and WebSockets. Users should be able to join different chat rooms and exchange
-                            messages.</li>
-                        <li><strong>Social Media Platform:</strong> Develop a basic social media platform where users
-                            can create profiles, post updates, like and comment on posts, and connect with friends.</li>
-                    </ul>
-                    <p><b>Or do you have a better idea? Please, <a href="#contact"
-                                title="Visit the Contact section">Contact me. Now!</a></b></p>
-                </div>
-            </div>
+      <div class="container">
+        <h2>Some future programming projects I'm interested in</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <ul>
+              <li>
+                <strong>A React Weather Dashboard:</strong> Build a weather
+                dashboard that fetches weather data for different cities using a
+                weather API and displays the information in an interactive
+                interface.
+              </li>
+              <li>
+                <strong>Memory Game:</strong> Build a memory card game where
+                users need to match pairs of cards. Track the number of moves
+                and time taken to complete the game.
+              </li>
+              <li>
+                <strong>To-Do List App:</strong> Create a web-based to-do list
+                application where users can add, edit, and mark tasks as
+                completed. Implement user authentication to allow users to have
+                their own personalized to-do lists. Implement AI functionality.
+              </li>
+              <li>
+                <strong>RESTful API:</strong> Develop a RESTful API that
+                provides data and functionality for a specific domain, such as
+                user profiles, product listings, or events. Document the API
+                endpoints for others to use.
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <ul>
+              <li>
+                <strong>Chat Application:</strong> Create a real-time chat
+                application using technologies like Node.js and WebSockets.
+                Users should be able to join different chat rooms and exchange
+                messages.
+              </li>
+              <li>
+                <strong>Social Media Platform:</strong> Develop a basic social
+                media platform where users can create profiles, post updates,
+                like and comment on posts, and connect with friends.
+              </li>
+            </ul>
+            <p>
+              <b
+                >Or do you have a better idea? Please,
+                <a href="#contact" title="Visit the Contact section"
+                  >Contact me. Now!</a
+                ></b
+              >
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
     <section id="learning-path" class="non-gradient-section">
-        <div class="container">
-            <div class="row">
-                <h2>My learning path</h2>
-                <div class="row">
-                    <div class="col-md-4 grid-container">
-                        <ul>
-                            <li><strong>Troubleshooting:</strong> After graduating as a "Construction Engineer"
-                                in 1993, I knew that the future would be in computers. Threfore, I took every
-                                opportunity to learn, and worked for a year with troubleshooting and replacing PC
-                                components. Which gave me a solid
-                                understanding of computer hardware.</li>
-
-                            <li><strong>Design and Image Management:</strong> Then I worked on design and image
-                                management,
-                                which involved graphic design software CorelDraw, Adobe as well as some HTML and CSS for
-                                web design.</li>
-
-                            <li><strong>Digital Publishing</strong> (including Animation and Adobe Flash): I took a 5
-                                ETCS digital publishing university course, where I learned animation and Adobe Flash,
-                                which involved ActionScript, a programming language used for Flash. I created simple
-                                Flash and HTML pages, which required knowledge of HTML and CSS, the building blocks of
-                                web development.</li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4 grid-container">
-                        <ul>
-                            <li><strong>JavaScript Programming:</strong> I started coding in JavaScript around 2010.
-                                JavaScript is a key language for web development, used for creating interactive elements
-                                on websites.</li>
-
-                            <li><strong>SharePoint and Power Automation Flows:</strong> I developed and maintained a
-                                SharePoint site with Power Automation Flows, incuding Approval Flows.</li>
-
-                            <li><strong>PDF Form Development:</strong> I developed a PDF form with JavaScript
-                                functionality. This required advanced JavaScript skills.</li>
-                            <li><strong>Power BI and DAX:</strong> I developed and maintained Power BI dashboards using
-                                DAX (Data Analysis Expressions) for advanced data
-                                manipulation. Power BI is a business analytics tool from Microsoft. It required skills
-                                in data analysis, visualization,
-                                and a strong understanding of DAX for creating custom calculations in Power BI.</li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4 grid-container">
-                        <ul>
-                            <li><strong>Python:</strong> I have taken some courses on Python data visualizations and am
-                                now doing CodeCademy courses in Python.
-                                Python is a versatile language used in web development, data analysis, AI, and more.
-                            </li>
-
-                            <li><strong>Web Development:</strong> I learnt the basics of responsive web development at a
-                                week's course at 42 Firenze, SheCodes Plus and AddOn course, SheCodes Responsive and
-                                AddOn course and am now doing CodeCademy courses in web development.</li>
-
-                            <li><strong>AI:</strong> I took a 2 ETCS course at Linköping University in basic AI 2023. AI
-                                is a
-                                complex field that involves machine learning,
-                                neural networks, and more.</li>
-                        </ul>
-                    </div>
+      <div class="container-fluid">
+        <div class="row">
+            <h2>My learning path</h2>
+        </div>  
+        <div class="row">
+            <div class="col-md-4">
+              <button class="accordion">1. Troubleshooting</button>
+              <button class="accordion">2. Design and Image Management</button>
+              <button class="accordion">3. Digital Publishing (including Animation and
+                Adobe Flash)</button>
+              <button class="accordion">4. JavaScript Programming</button>
+              <button class="accordion">5. SharePoint and Power Automation Flows</button>
+            </div>
+            <div class="col-md-4">
+              <button class="accordion">6. PDF Form Development</button>
+              <button class="accordion">7. Power BI and DAX</button>
+                <button class="accordion">8. Python</button>
+                <button class="accordion">9. Responsive web development</button>
+                <button class="accordion">10. Artificial Intelligence</button>
+            </div>
+            <div class="col-md-4">
+                <div class="panel">
+                  <p>1. After graduating as a
+                      "Construction Engineer" in 1993, I knew that the future would
+                      be in computers. Threfore, I took every opportunity to learn,
+                      and worked for a year with troubleshooting and replacing PC
+                      components. Which gave me a solid understanding of computer
+                      hardware.</p>
                 </div>
-                <p>During the years I've always been working with digital solutions, the last years I've been
-                    solving
-                    digital problems.
-                    Here are some:</p>
-                <div class="col-md-4 grid-container">
-                    <ul>
-                        <li>I developed and maintained a PDF form with JavaScript functionality for my client. The
-                            client needed this form to
-                            standardize their work, the form itself, and the final outcome. This form contains
-                            numerous
-                            conditional statements and
-                            ultimately provides a result indicating whether the job is "approved" or "rejected". It
-                            is
-                            used as a certification
-                            document for the end customer.</li>
-                    </ul>
+                <div class="panel">
+                  <p>2. While working with technical documentation and image management, I learnt more about graphic design with CorelDraw, Adobe software, as well as "FrameMaker + SGML".</p>
                 </div>
-                <div class="col-md-4 grid-container">
-                    <ul>
-                        <li>The end customer was no longer able to receive technical documentation on CD-ROM. In
-                            response, I developed and
-                            maintained a SharePoint site with Power Automation Flows. This included approval flows for
-                            the end customer, automatic
-                            updates of the SharePoint site, and internal reporting to all involved parties via Teams and
-                            to responsible parties via
-                            email.</li>
-                        <li>The end customer needed developed monthly reports on the work performed under a maintenance
-                            contract. In response, I
-                            developed and continue to maintain three Power BI dashboards.</li>
-                    </ul>
+                <div class="panel">
+                  <p>3. I took a 5 ETCS digital publishing university
+                      course, where I learned animation with Adobe Flash, which
+                      involved ActionScript, a programming language used for Flash.
+                      I created simple Flash and HTML pages, which required
+                      knowledge of HTML and CSS, the building blocks of web
+                      development.</p>
                 </div>
-                <div class="col-md-4">
-                    <img src="images/my-coding-evolution.png" alt="Saras learning path" class="img-fluid"
-                        title="Saras learning path">
+                <div class="panel">
+                  <p>4. I started coding in
+                      JavaScript around 2010 and managed CSS for WordPress sites with ease.</p>
+                </div>
+                <div class="panel">
+                  <p>5. I developed and maintained a SharePoint site with Power Automation Flows, incuding Approval Flows, since a client had to stop distributing their technical documentation on DVDs.</p>
+                </div>
+                <div class="panel">
+                  <p>6. I developed PDF forms with JavaScript functionality to create easy to handle Certificates for a client. This required advanced JavaScript skills.</p>
+                </div>
+                <div class="panel">
+                  <p>7. I developed and maintained
+                      Power BI dashboards using DAX for
+                      advanced data manipulation. Power BI is a business analytics
+                      tool from Microsoft. It required skills in data analysis,
+                      visualization, and a strong understanding of DAX for creating
+                      custom calculations in Power BI.</p>
+                </div>
+                <div class="panel">
+                  <p>8. I have taken some courses on Python
+                      data visualizations and am now doing CodeCademy courses in
+                      Python. Python is a versatile language used in web
+                      development, data analysis, AI, and more.</p>
+                </div>
+                <div class="panel">
+                  <p>9. I learnt the basics of
+                      responsive web development at a week's course at 42 Firenze,
+                      SheCodes Plus and AddOn course, SheCodes Responsive and AddOn
+                      course and a CodeCademy course in web development.</p>
+                </div>
+                <div class="panel">
+                  <p>10. I took a 2 ETCS course at Linköping
+                      University in basic AI 2023. AI is a complex field that
+                      involves machine learning, neural networks, and more. Now I'm deepening my knowledge within AI. One of my finished projects, I developed during the SheCodes Max course: an AI API Poem generator app. But look out for more AI projects from me!</p>
                 </div>
             </div>
         </div>
     </section>
-
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-links">
-                    <h3>Explore</h3>
-                    <ul>
-                        <li><a href="#welcome" title="Visit Home">Welcome</a></li>
-                        <li><a href="#about" title="Visit the About section">About Me</a></li>
-                        <li><a href="#portfolio" title="Visit the Portfolio section">My Portfolio</a></li>
-                        <li><a href="#contact" title="Visit the Contact section">Contact Me</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h3>More</h3>
-                    <ul>
-                        <li><a href="#future-projects" title="Visit the Future projects section">My Future projects</a>
-                        </li>
-                        <li><a href="#learning-path" title="Visit the Learning path section">My Learning path</a></li>
-                    </ul>
-                </div>
-                <div class="footer-social">
-                    <h3>Connect</h3>
-                    <ul>
-                        <li><a href="https://www.linkedin.com/in/sjodinscolari/" target="_blank"
-                                title="Visit Sara on LinkedIn"><i class="fab fa-linkedin"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-info">
-                <p>This Porfolio site is coded by <a href="https://sarasjodin.com"
-                        title="Visit sarasjodin.com's homepage" target="_blank"><b>sarasjodin.com</b></a> and is open
-                    sourced on <a href="https://github.com/sarasjodin/OnePagePortfolio"
-                        title="Visit this GitHub repository" target="_blank"><b>GitHub.</b></a></p>
-            </div>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-links">
+            <h3>Explore</h3>
+            <ul>
+              <li><a href="#welcome" title="Visit Home">Welcome</a></li>
+              <li>
+                <a href="#about" title="Visit the About section">About Me</a>
+              </li>
+              <li>
+                <a href="#portfolio" title="Visit the Portfolio section"
+                  >My Portfolio</a
+                >
+              </li>
+              <li>
+                <a href="#contact" title="Visit the Contact section"
+                  >Contact Me</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h3>More</h3>
+            <ul>
+              <li>
+                <a
+                  href="#future-projects"
+                  title="Visit the Future projects section"
+                  >My Future projects</a
+                >
+              </li>
+              <li>
+                <a href="#learning-path" title="Visit the Learning path section"
+                  >My Learning path</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-social">
+            <h3>Connect</h3>
+            <ul>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/sjodinscolari/"
+                  target="_blank"
+                  title="Visit Sara on LinkedIn"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
         </div>
+        <div class="footer-info">
+          <p>
+            This Porfolio site is coded by
+            <a
+              href="https://sarasjodin.com"
+              title="Visit sarasjodin.com's homepage"
+              target="_blank"
+              ><b>sarasjodin.com</b></a
+            >
+            and is open sourced on
+            <a
+              href="https://github.com/sarasjodin/OnePagePortfolio"
+              title="Visit this GitHub repository"
+              target="_blank"
+              ><b>GitHub.</b></a
+            >
+          </p>
+        </div>
+      </div>
     </footer>
-
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
-
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script/script.js"></script>
+  </body>
 </html>
